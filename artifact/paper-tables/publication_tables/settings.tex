@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering\small
+\caption{Research questions, key comparisons and evidence scope.}
+\label{tab:settings}
+\begin{tabularx}{\columnwidth}{@{}ll>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+RQ & Research stage & Key comparison & Evidence scope \\
+\midrule
+RQ1 & Evidence & Original visible versus hidden, with the same requirement and input. & All 164 HumanEval tasks with Qwen and Gemma materials; conflict and guard strata. \\
+\addlinespace
+RQ2 & Representation & Direct versus derived answers, with raw versus typed output; encoding replay on the same declared values. & All 378 MBPP+ tasks; a separate finite encoding control. \\
+\addlinespace
+RQ3 & Candidate selection & Original versus expanded candidate pools; review versus masks matching submission volume within each arm. & Separate finite cohorts for candidate supply and review. \\
+\addlinespace
+RQ4 & Action & Generated actions versus rule replay on identical judgments and fixed assertions. & 12 finite families covering unique and multiple legal results. \\
+\bottomrule
+\end{tabularx}
+\end{table}

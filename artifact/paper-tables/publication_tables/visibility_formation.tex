@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Assertion retention and formation across the complete HumanEval input frame.}
+\label{tab:s_formation}
+\begin{tabular}{llrrrrr}
+\toprule
+Source & Judge & Formed $n$ & Formed $U_V/U_H$ & Full $U_V/U_H$ & $F_V/F_H$ & $N_V/N_H$ \\
+\midrule
+Qwen9B & Qwen9B & 891 & 537.67/483.67 & 693.00/642.67 & 978/1122 & 155.33/159.00 \\
+Qwen9B & Qwen27B & 891 & 715.00/707.33 & 930.67/929.33 & 241/295 & 215.67/222.00 \\
+Qwen9B & Qwen35B & 891 & 703.67/670.67 & 875.00/884.00 & 412/400 & 171.33/213.33 \\
+Qwen9B & Gemma & 891 & 697.67/680.67 & 898.00/910.33 & 435/389 & 200.33/229.67 \\
+Qwen9B & DeepSeek & 891 & 622.00/198.00 & 776.33/275.00 & 231/556 & 154.33/77.00 \\
+Gemma & Qwen9B & 1070 & 693.67/575.67 & 736.67/623.00 & 889/1102 & 43.00/47.33 \\
+Gemma & Gemma & 1070 & 898.67/869.33 & 944.67/912.67 & 218/258 & 46.00/43.33 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}
+\footnotesize
+Each source covers 1,312 inputs. Formed denotes executable originals with adjudicable references. $U$ and newly correct formation $N$ are seed means; subscripts V/H denote visible/hidden conditions. $F$ counts technical failures in logical cells, summed over seeds. Missing-original dependencies remain unstarted; their counts and response sharing are specified in Section~\ref{supp:protocol}.
+\end{minipage}
+\end{table}

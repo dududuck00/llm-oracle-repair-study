@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Effects of supplied type constraints and derivation on separate MBPP cohorts.}
+\label{tab:types}
+\begin{tabular}{llrrr}
+\toprule
+Cohort & Generation condition & $U/320$ & Type violations & Tokens/input \\
+\midrule
+Type factorial & Direct, unconstrained & 235.67 & 20.67 & 202.15 \\
+Type factorial & Direct, typed & 241.67 & 0.00 & 203.19 \\
+Type factorial & Derivation, unconstrained & 210.67 & 86.00 & 371.78 \\
+Type factorial & Derivation, typed & 291.33 & 0.00 & 370.90 \\
+New-task replication & Derivation, unconstrained & 242.33 & 56.33 & 362.28 \\
+New-task replication & Derivation, typed & 293.00 & 0.00 & 363.25 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}
+\footnotesize
+Each cohort contains 40 tasks and 320 inputs. Counts are means over three seeds. $U$: retained assertions consistent with the reference; Tokens/input includes total model consumption.
+\end{minipage}
+\end{table}

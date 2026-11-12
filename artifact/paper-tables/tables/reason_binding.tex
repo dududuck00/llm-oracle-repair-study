@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Protection and recovery under rule replay with unrestricted explanations.}
+\label{tab:reason_binding}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Scope & Focus & $H$ direct$\to$bound & To KEEP & To DEFER & $R$ direct$\to$bound & Lost $R$ & Gained $R$ \\
+\midrule
+All specified & G & $13\to 1$ & 8 & 4 & $33\to 38$ & 4 & 9 \\
+All specified & L & $23\to 0$ & 15 & 8 & $39\to 39$ & 5 & 5 \\
+Conflicts & G & $9\to 1$ & 4 & 4 & $19\to 23$ & 1 & 5 \\
+Conflicts & L & $18\to 0$ & 10 & 8 & $22\to 20$ & 4 & 2 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}
+\footnotesize
+Replay uses the literal policy $\pi_L$; outcome counts include technical deferrals. G/L denotes global-program/current-assertion focus. To KEEP/DEFER partitions prevented harms; Lost/Gained $R$ counts recoveries lost or gained under replay. Scopes distinguish all specified panels from execution conflicts.
+\end{minipage}
+\end{table}

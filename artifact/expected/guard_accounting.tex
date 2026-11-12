@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Guard outcomes: hidden minus visible in mean counts over three seeds. $D_F$ and $D_S$ remove correct originals through technical failure and semantic deferral. Each row obeys $\Delta U=\Delta R-\Delta H-\Delta D_F-\Delta D_S$. Source denominators are 629/885 inputs, with 626/871 correct originals.}
+\label{tab:guard_accounting}
+\begin{tabular}{llrrrrr}
+\toprule
+Source & Judge & $\Delta R$ & $\Delta H$ & $\Delta D_F$ & $\Delta D_S$ & $\Delta U$ \\
+\midrule
+Qwen9B & Qwen9B & +0.00 & +14.67 & +36.00 & -0.33 & -50.33 \\
+Qwen9B & Qwen27B & +0.00 & +13.67 & +19.33 & +0.00 & -33.00 \\
+Qwen9B & Qwen35B & +0.00 & +15.00 & +31.00 & +3.67 & -49.67 \\
+Qwen9B & Gemma & +0.00 & +9.67 & +20.33 & +1.67 & -31.67 \\
+Qwen9B & DeepSeek & +0.00 & +306.67 & +90.67 & +0.33 & -397.67 \\
+Gemma & Qwen9B & +0.00 & +48.67 & +67.67 & -0.33 & -116.00 \\
+Gemma & Gemma & +1.00 & +23.67 & +12.33 & +1.33 & -36.33 \\
+\bottomrule
+\end{tabular}
+\end{table}

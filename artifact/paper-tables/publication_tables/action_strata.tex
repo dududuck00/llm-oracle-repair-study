@@ -1,0 +1,32 @@
+\begin{table}[t]
+\centering
+\small
+\caption{DeepSeek action errors by finite family and seed.}
+\label{tab:s_action_strata}
+\begin{tabular}{lrrrrr}
+\toprule
+Family or seed & $n$ & $C$ & $E$ & $E_c$ & $H_c$ \\
+\midrule
+Adjacent absolute-difference total & 16 & 4 & 3 & 2 & 2 \\
+Strict inversion count & 16 & 4 & 2 & 1 & 0 \\
+Strict interior peak count & 16 & 3 & 3 & 1 & 1 \\
+First repeated entry index & 16 & 3 & 2 & 0 & 0 \\
+Longest nondecreasing contiguous run & 16 & 3 & 2 & 1 & 1 \\
+Nonzero sign-change count & 16 & 3 & 5 & 2 & 2 \\
+Any most frequent value & 16 & 1 & 1 & 0 & 0 \\
+Any least frequent present value & 16 & 0 & 2 & 0 & 0 \\
+Any nearest-to-zero value & 16 & 0 & 3 & 0 & 0 \\
+Any adjacent-pair sum & 16 & 1 & 4 & 0 & 0 \\
+Any nonempty proper-prefix sum & 16 & 0 & 1 & 0 & 0 \\
+Any positive pairwise absolute difference & 16 & 2 & 5 & 2 & 2 \\
+Seed 46001 & 96 & 14 & 12 & 2 & 2 \\
+Seed 46002 & 96 & 10 & 21 & 7 & 6 \\
+All responses & 192 & 24 & 33 & 9 & 8 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}
+\footnotesize
+$n$: responses; $C$: responses with correct requirement status and both assertion labels; $E$: rule violations; $E_c,H_c$: rule violations and harmful repairs within $C$. Family and seed rows partition the same 192 responses.
+\end{minipage}
+\end{table}

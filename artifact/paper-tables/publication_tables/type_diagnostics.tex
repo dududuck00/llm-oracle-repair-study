@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Effects of automatic type constraints across MBPP+ evaluation subsets.}
+\label{tab:s_type_diagnostics}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & Known & All & Known subset & Compatible & Common valid & $n$ \\
+\midrule
+Qwen3.5-9B & 354 & +1.94 & +2.07 & +3.95 & +2.02 & 3919 \\
+Qwen3.8-27B & 375 & +4.96 & +5.00 & +8.17 & +5.16 & 4209 \\
+Qwen3.5-35B-A3B & 222 & +10.05 & +17.12 & +18.28 & +10.77 & 4057 \\
+Gemma-4-26B-A4B-it & 123 & +0.33 & +1.02 & +0.98 & +0.43 & 3931 \\
+DeepSeek-Coder-6.7B-Instruct & 0 & +0.00 & N/A & N/A & +0.00 & 3984 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}
+\footnotesize
+Effects are TT minus TR retention, in percentage points. Known counts tasks with usable type predictions; Known subset uses those tasks, and Compatible uses inputs whose reference output types match the predictions. Common valid requires valid responses in all four conditions and includes semantic deferrals; $n$ counts these input--seed pairs. N/A denotes an empty subset.
+\end{minipage}
+\end{table}

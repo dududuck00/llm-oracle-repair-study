@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Protection paths and recovery turnover under action replay.}
+\label{tab:action_paths}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Scope & Condition & $H$ direct$\to$bound & To KEEP & To DEFER & $R$ direct$\to$bound & Lost $R$ & Gained $R$ \\
+\midrule
+All specified & All conditions & $265\to 35$ & 133 & 97 & $469\to 441$ & 190 & 162 \\
+Conflicts & All conditions & $219\to 35$ & 87 & 97 & $356\to 356$ & 101 & 101 \\
+Guards & All conditions & $46\to 0$ & 46 & 0 & $113\to 85$ & 89 & 61 \\
+Conflicts & G\_N & $72\to 7$ & 40 & 25 & $108\to 80$ & 34 & 6 \\
+Conflicts & G\_E & $68\to 5$ & 18 & 45 & $98\to 83$ & 29 & 14 \\
+Conflicts & L\_N & $41\to 16$ & 11 & 14 & $74\to 96$ & 18 & 40 \\
+Conflicts & L\_E & $38\to 7$ & 18 & 13 & $76\to 97$ & 20 & 41 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}
+\footnotesize
+Arrows show generated $\to$ replayed counts under $\pi_S$. To KEEP/DEFER partitions prevented harms; Lost/Gained $R$ counts recoveries lost or gained. Each condition has 576 specified panels: 384 conflicts and 192 guards. Rows labeled \textit{All conditions} sum responses to the same panels under the four conditions in Table~\ref{tab:action}.
+\end{minipage}
+\end{table}

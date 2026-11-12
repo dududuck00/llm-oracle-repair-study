@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Effects of candidate supply on assertion retention and token consumption.}
+\label{tab:supply}
+\begin{tabular}{lrrrrrr}
+\toprule
+Candidate condition & $U/480$ & $R/360$ & $H/120$ & $D/120$ & Correct kept/120 & Tokens/panel \\
+\midrule
+Fixed candidate pool & 156.00 & 66.00 & 0.50 & 29.50 & 90.00 & 1733.39 \\
+Reuse generated values & 339.00 & 249.00 & 10.50 & 19.50 & 90.00 & 1733.39 \\
+Budgeted extra sampling & 360.00 & 262.00 & 12.00 & 10.00 & 98.00 & 2391.20 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}
+\footnotesize
+Counts are means over two seeds; denominators appear in the column headings. Tokens include all calls required by each route, averaged over all panels.
+\end{minipage}
+\end{table}

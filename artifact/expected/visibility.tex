@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{HumanEval: all 164 tasks for both assertion sources, with eight inputs and three seeds. $U_V/U_H$ are mean correct-retained counts under visible/hidden originals; $n$ counts frozen inputs. $\Delta$ is hidden minus visible in percentage points. Avail. restricts guards to pairs across the two visibility conditions with no technical failure in either arm; its pooled denominators are in Table~\ref{tab:s_availability}.}
+\label{tab:visibility}
+\begin{tabular}{llrrrrrrr}
+\toprule
+Source & Judge & $n_C$ & $U_V/U_H$: conflict & $\Delta_C$ & $n_G$ & $U_V/U_H$: guard & $\Delta_G$ & Avail. $\Delta_G$ \\
+\midrule
+Qwen9B & Qwen9B & 262 & 58.00/54.33 & -1.40 & 629 & 479.67/429.33 & -8.00 & -3.60 \\
+Qwen9B & Qwen27B & 262 & 106.00/131.33 & +9.67 & 629 & 609.00/576.00 & -5.25 & -2.17 \\
+Qwen9B & Qwen35B & 262 & 103.00/119.67 & +6.36 & 629 & 600.67/551.00 & -7.90 & -3.29 \\
+Qwen9B & Gemma & 262 & 108.67/123.33 & +5.60 & 629 & 589.00/557.33 & -5.03 & -2.78 \\
+Qwen9B & DeepSeek & 262 & 41.00/14.67 & -10.05 & 629 & 581.00/183.33 & -63.22 & -58.63 \\
+Gemma & Qwen9B & 177 & 39.67/42.00 & +1.32 & 885 & 646.00/530.00 & -13.11 & -8.20 \\
+Gemma & Gemma & 177 & 59.00/66.00 & +3.95 & 885 & 831.67/795.33 & -4.11 & -2.91 \\
+\bottomrule
+\end{tabular}
+\end{table}

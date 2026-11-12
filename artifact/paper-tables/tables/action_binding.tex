@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Generated and replayed actions under attention and instruction controls.}
+\label{tab:action}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Condition & $U$ direct & $U$ bound & $H$ direct & $H$ bound & $D$ direct & $D$ bound & $S$ direct & $S$ bound \\
+\midrule
+G\_N & 217 & 218 & 84 & 7 & 37 & 59 & 245 & 245 \\
+G\_E & 217 & 221 & 85 & 5 & 14 & 59 & 273 & 273 \\
+L\_N & 211 & 263 & 48 & 16 & 26 & 40 & 233 & 235 \\
+L\_E & 245 & 297 & 48 & 7 & 5 & 17 & 262 & 262 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}
+\footnotesize
+Replay applies policy $\pi_S$ to the same judgment fields, checking requirement status before assertion support. Counts sum two seeds: 576 specified cases (192 initially correct, 384 initially wrong) and 288 unspecified cases. G/L denotes global-program/current-assertion focus; N/E denotes ordinary/expanded instructions. $S$: submissions on unspecified requirements.
+\end{minipage}
+\end{table}

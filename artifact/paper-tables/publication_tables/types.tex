@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Effects of derivation and automatic type constraints on assertion retention in MBPP+.}
+\label{tab:types_full}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & Known/378 & $U_{DR}$ & $U_{TR}$ & $U_{DT}$ & $U_{TT}$ & $\Delta_T$ & Tasks +/--/= \\
+\midrule
+Qwen3.5-9B & 354 & 351.00 & 799.33 & 374.00 & 828.67 & 1.94 & 71/51/256 \\
+Qwen3.8-27B & 375 & 653.67 & 839.00 & 666.33 & 914.00 & 4.96 & 114/39/225 \\
+Qwen3.5-35B-A3B & 222 & 259.67 & 477.00 & 407.00 & 629.00 & 10.05 & 125/33/220 \\
+Gemma-4-26B-A4B-it & 123 & 607.33 & 861.00 & 623.00 & 866.00 & 0.33 & 25/14/339 \\
+DeepSeek-Coder-6.7B-Instruct & 0 & 230.00 & 292.33 & 230.00 & 292.33 & 0.00 & 0/0/378 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}
+\footnotesize
+$U$: mean correct retention over seeds, out of 1,512 input cases. DR/TR: direct generation/derivation with raw output; DT/TT: direct generation/derivation with typed output. Known counts tasks with usable type predictions. $\Delta_T$: TT minus TR retention, in percentage points; Tasks +/--/= counts tasks with higher/lower/equal retention under TT.
+\end{minipage}
+\end{table}

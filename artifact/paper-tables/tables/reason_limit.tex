@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Effects of explanation length and attention focus on action consistency.}
+\label{tab:reason_limit}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Focus & Char. bound & Valid & Policy violations & Supported$\to$REPAIR & $R$ & $H$ & $D$ & $U$ \\
+\midrule
+G & 240 & 192/192 & 100 & 57 & 33 & 49 & 15 & 65 \\
+G & None & 187/192 & 49 & 11 & 33 & 13 & 4 & 112 \\
+L & 240 & 192/192 & 72 & 13 & 22 & 25 & 9 & 84 \\
+L & None & 184/192 & 64 & 16 & 39 & 23 & 4 & 108 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}
+\footnotesize
+G/L denotes global-program/current-assertion focus. Each condition has 192 attempts, with 96 correct originals and 48 repairable cases; the output cap is 1,024 tokens. Policy violations are evaluated on valid responses against the literal action rule. Supported$\to$REPAIR counts repairs of originals predicted as supported. All attempts, including output-cap failures, enter outcome counts.
+\end{minipage}
+\end{table}

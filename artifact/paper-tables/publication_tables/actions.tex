@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Generated actions and rule replay on the same semantic judgments.}
+\label{tab:actions_full}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & $E$ & $E_c/C$ & $H$ & $R$ & $U$ & Protection K/D & Lost/gained \\
+\midrule
+Qwen3.5-9B & 1 & 1/160 & 0$\to$0 & 42$\to$42 & 119$\to$120 & 0/0 & 0/0 \\
+Qwen3.8-27B & 0 & 0/180 & 0$\to$0 & 46$\to$46 & 138$\to$138 & 0/0 & 0/0 \\
+Qwen3.5-35B-A3B & 0 & 0/180 & 0$\to$0 & 45$\to$45 & 135$\to$135 & 0/0 & 0/0 \\
+Gemma-4-26B-A4B-it & 3 & 3/186 & 0$\to$0 & 46$\to$46 & 135$\to$138 & 0/0 & 0/0 \\
+DeepSeek-Coder-6.7B-Instruct & 33 & 9/24 & 28$\to$8 & 14$\to$10 & 62$\to$79 & 19/1 & 4/0 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}
+\footnotesize
+Each model has 192 responses, with 96 correct originals and 48 repairable cases. $E$: rule violations; $C$: responses with correct requirement status and both assertion labels; $E_c$: violations within $C$. Arrows show generated $\to$ replayed outcomes. Protection K/D splits prevented harms into KEEP/DEFER; Lost/gained counts recoveries lost or gained under replay.
+\end{minipage}
+\end{table}

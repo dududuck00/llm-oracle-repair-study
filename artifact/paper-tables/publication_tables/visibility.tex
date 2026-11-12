@@ -1,0 +1,29 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Effect of original-assertion visibility on correct assertion retention in HumanEval.}
+\label{tab:visibility}
+\begin{tabular}{lrrrrrrr}
+\toprule
+& \multicolumn{3}{c}{Conflict} & \multicolumn{4}{c}{Guard} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-8}
+Model (judge) & $n_C$ & $U_V/U_H$ & $\Delta_C$ & $n_G$ & $U_V/U_H$ & $\Delta_G$ & Avail. $\Delta_G$ \\
+\midrule
+\multicolumn{8}{l}{\textit{Source model: Qwen3.5-9B}} \\
+Qwen3.5-9B & 262 & 58.00/54.33 & -1.40 & 629 & 479.67/429.33 & -8.00 & -3.60 \\
+Qwen3.8-27B & 262 & 106.00/131.33 & +9.67 & 629 & 609.00/576.00 & -5.25 & -2.17 \\
+Qwen3.5-35B-A3B & 262 & 103.00/119.67 & +6.36 & 629 & 600.67/551.00 & -7.90 & -3.29 \\
+Gemma-4-26B-A4B-it & 262 & 108.67/123.33 & +5.60 & 629 & 589.00/557.33 & -5.03 & -2.78 \\
+DeepSeek-Coder-6.7B-Instruct & 262 & 41.00/14.67 & -10.05 & 629 & 581.00/183.33 & -63.22 & -58.63 \\
+\addlinespace
+\multicolumn{8}{l}{\textit{Source model: Gemma-4-26B-A4B-it}} \\
+Qwen3.5-9B & 177 & 39.67/42.00 & +1.32 & 885 & 646.00/530.00 & -13.11 & -8.20 \\
+Gemma-4-26B-A4B-it & 177 & 59.00/66.00 & +3.95 & 885 & 831.67/795.33 & -4.11 & -2.91 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}
+\footnotesize
+$U_V/U_H$: mean counts of correct assertions retained under visible/hidden originals. $n_C,n_G$: conflict and guard input counts. $\Delta$: hidden minus visible retention, in percentage points. Avail.: guard pairs without technical failures in either condition; denominators appear in Supplementary Table~\ref{S-tab:s_availability}.
+\end{minipage}
+\end{table}

@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Visibility effects for both assertion sources in the reused 40-task subset, added 124 tasks and complete 164-task frame. Entries are hidden minus visible correct retention, percentage points. Qwen conflict/guard denominators are 63/199/262 and 169/460/629; Gemma denominators are 46/131/177 and 217/668/885. The 40- and 124-task subsets partition the full cohort.}
+\label{tab:s_task_splits}
+\begin{tabular}{llrrrrrr}
+\toprule
+Source & Judge & Conflict 40 & Conflict 124 & Conflict 164 & Guard 40 & Guard 124 & Guard 164 \\
+\midrule
+Qwen9B & Qwen9B & -4.76 & -0.34 & -1.40 & -12.03 & -6.52 & -8.00 \\
+Qwen9B & Qwen27B & +13.76 & +8.38 & +9.67 & -6.31 & -4.86 & -5.25 \\
+Qwen9B & Qwen35B & +7.41 & +6.03 & +6.36 & -9.47 & -7.32 & -7.90 \\
+Qwen9B & Gemma & -2.12 & +8.04 & +5.60 & -7.30 & -4.20 & -5.03 \\
+Qwen9B & DeepSeek & -13.23 & -9.05 & -10.05 & -59.17 & -64.71 & -63.22 \\
+Gemma & Qwen9B & +11.59 & -2.29 & +1.32 & -14.75 & -12.57 & -13.11 \\
+Gemma & Gemma & +6.52 & +3.05 & +3.95 & -6.45 & -3.34 & -4.11 \\
+\bottomrule
+\end{tabular}
+\end{table}

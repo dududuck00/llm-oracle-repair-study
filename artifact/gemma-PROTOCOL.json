@@ -1,0 +1,70 @@
+{
+  "tasks": 164,
+  "inputs_per_task": 8,
+  "reused_tasks": 40,
+  "added_tasks": 124,
+  "source": "Gemma-4-26B-A4B-it",
+  "judges": [
+    "Qwen3.5-9B",
+    "Gemma-4-26B-A4B-it"
+  ],
+  "code_seeds": [
+    42000,
+    42001,
+    42002,
+    42003
+  ],
+  "original_seed": 41000,
+  "judgment_seeds": [
+    47001,
+    47002,
+    47003
+  ],
+  "temperature": {
+    "code": 0.7,
+    "original": 0.2,
+    "judgment": 0.2
+  },
+  "output_caps": {
+    "code": 2048,
+    "original": 1024,
+    "judgment": 1536
+  },
+  "context_length": 8192,
+  "disable_any_whitespace": {
+    "original": true,
+    "code": false,
+    "judgment": false
+  },
+  "exact_40_task_request_bodies_unchanged": true,
+  "cached_reference_executions": 1312,
+  "inherited_candidate_executions": 1280,
+  "new_candidate_execution_ceiling": 3968,
+  "missing_or_deferred_original": "Do not launch dependent judgments; retain six logical slots per judge in the complete denominator.",
+  "malformed_literal_original": "Retain non-deferred raw assertion in both-arm comparison; do not repair upstream.",
+  "reference_consistency_not_human_semantic_gold": true,
+  "confidence_intervals": false,
+  "stable_idle_seconds": 90,
+  "allowed_root_context": {
+    "pid": 859677,
+    "uid": 0,
+    "start_ticks": "488499279"
+  },
+  "no_quality_retry": true,
+  "automatic_service_restart": false,
+  "preserve_old_records": true,
+  "no_mbpp_no_action_no_other_judges": true,
+  "budget": {
+    "new_original_requests": 992,
+    "new_code_requests": 496,
+    "new_judgment_ceiling": 11904,
+    "maximum_engineering_requests": 8,
+    "maximum_total_requests": 13400,
+    "maximum_formal_completion_tokens": 20316160,
+    "actual_judgments_frozen_after_original_generation": true,
+    "exact_requests_reused": true,
+    "measured_cost_retained": true,
+    "unknown_usage_retained": true,
+    "inherited_cost_charged_again": false
+  }
+}
